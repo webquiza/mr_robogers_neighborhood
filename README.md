@@ -26,7 +26,7 @@ _This web application takes a number from a user and returns a range of numbers 
 
 * _Clone this repository._
 * _Navigate to the top level of the directory._
-* _Open the index.html file in order to view in your browser. Alternatively, you can view the project via this [GitHub Page](https://github.com/webquiza/mr_robogers_neighborhood/)_
+* _Open the index.html file in order to view in your browser. Alternatively, you can view the project via this [GitHub Page](https://webquiza.github.io/mr_robogers_neighborhood/)_
 
 ## Specifications
 
