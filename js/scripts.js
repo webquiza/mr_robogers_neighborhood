@@ -3,8 +3,10 @@
 function roboTalk(input) {
   let userNumber = [];
   for (let i = 0; i <= input; i++) {
+    // .toString() will return a string representing elements in userNumber.
     userNumber.push(i.toString());
 
+    // .includes() finds if an element is included inside userNumber and returns a boolean, true or false.
     if (userNumber[i].includes("3")) {
       userNumber[i] = " Won't you be my neighbor?";
     } else if (userNumber[i].includes("2")) {
