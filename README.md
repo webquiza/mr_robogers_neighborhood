@@ -30,7 +30,7 @@ _This web application takes a number from a user and returns a range of numbers 
 
 ## Specifications
 
-**Describe: userInput();**
+**Describe: roboTalk();**
 ```
 Test: "A string of "0" is returned if the number 0 is inputted."
 Expect(userNumber(0).toEqual("0");
