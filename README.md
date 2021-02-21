@@ -31,25 +31,30 @@ _This web application takes a number from a user and returns a range of numbers 
 ## Specifications
 
 **Describe: roboTalk();**
+
 ```
-Test: "A string of "0" is returned if the number 0 is inputted."
-Expect(userNumber(0).toEqual("0");
-```
-```
-Test: "A string of "0 , Beep!" is returned if the number 1 is inputted."
-Expect(userNumber(1).toEqual("0, Beep!");
+Test: "Numbers that contain a 1: All digits are replaced with "Beep!""
+Expect(roboTalk(1).toEqual("0, Beep!");
 ```
 ```
-Test: "A string of "0 , Beep!, Boop!" is returned if the number 2 is inputted."
-Expect(userNumber(2).toEqual("0, Beep!, Boop!");
+Test: "Numbers that contain a 2: All digits are replaced with "Boop!""
+Expect(roboTalk(2).toEqual("0, Beep!, Boop!");
 ```
 ```
-Test: "A string of "0 , Beep!, Boop!, Won't you be my neighbor?" is returned if the number 3 is inputted."
-Expect(userNumber(2).toEqual("0, Beep!, Boop!, Won't you be my neighbor?");
+Test: "Numbers that contain a 3: All digits are replaced with "Won't you be my neighbor?""
+Expect(roboTalk(3).toEqual("0, Beep!, Boop!, Won't you be my neighbor?");
 ```
 ```
-Test: "A string of "0 , Beep!, Boop!, Won't you be my neighbor?,4,5" is returned if the number 5 is inputted."
-Expect(userNumber(5).toEqual("0, Beep!, Boop!, Won't you be my neighbor?,4,5");
+Test: "Numbers that contain a 10: All digits are replaced with "Beep!"
+Expect(roboTalk(10).toEqual("0, Beep!, Boop!, Won't you be my neighbor?,4,5,6,7,8,9, Beep!");
+```
+```
+Test: "Numbers that contain a 12: All digits are replaced with "Beep!, Beep!, Boop!"
+Expect(roboTalk(12).toEqual("0, Beep!, Boop!, Won't you be my neighbor?,4,5,6,7,8,9, Beep!, Beep!, Boop!");
+```
+```
+Test: "Numbers that contain a 13: All digits are replaced with "Beep!, Beep!, Boop!, Won't you be my neighbor?"
+Expect(roboTalk(13).toEqual("0, Beep!, Boop!, Won't you be my neighbor?,4,5,6,7,8,9, Beep!, Beep!, Boop!, Won't you be my neighbor?");
 ```
 
 ## Known Bugs
